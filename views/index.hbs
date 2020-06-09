@@ -1,0 +1,25 @@
+<div class="heading">
+    <h1>SPACE X </h1>
+    <h1>Launches</h1>
+    <div class="img">
+        <img src="../public/spacex.png" alt="">
+        <h1>test</h1>
+    </div>
+</div>
+<div class="info">
+    <ul>
+
+        {{#each data}}
+
+        <li>{{@key}} : {{this}}</li>
+
+        {{/each}}
+
+    </ul>
+</div>
+
+<form action="/" method="post">
+
+    <label for="flight_number">Flight Number: </label>
+    <input type="text" name="flight_number">
+    <input type="submit" value="submit">
